@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(18, 18, 18);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  gap: 2px 2px;
+}
+
+/* navbar section start here  */
+
+.navbar {
+  width: 100%;
+  /* height: 10vh; */
+  grid-column: 1/13;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: space-around;
+  background-color: #000;
+  position: fixed;
+}
+
+.navbar ul {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 23px;
+}
+
+/* aside section starts here */
+
+.aside {
+  height: 90%;
+  width: 16.6%;
+  /* grid-column: 7/13; */
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: #000000;
+  position: fixed;
+  top: 10.5vh;
+  left: 0vh;
+  /* grid-auto-flow: row; */
+}
+
+.aside ul {
+  grid-column: 5/10;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+/* footer section starts here */
+
+.footer {
+  /* height: 10vh; */
+  grid-row: 9/13;
+  grid-column: 3/13;
+  text-align: center;
+  background-color: #000;
+}
+
+.lis {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.lis ul * {
+  margin-bottom: 5px;
+}
+
+/* item section starts here  */
+
+.item {
+    /* width: 300px; */
+    /* height: 20vh; */
+  background-color: red;
+  grid-column: 3/13;
+  grid-row: 2/9;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  overflow-y: visible;
+}
+
+.items-1 {
+    background-color: purple;
+    grid-column: 3 span;
+    grid-row: 6 span;
+    margin: 10px;
+}
